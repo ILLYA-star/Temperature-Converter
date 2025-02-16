@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="math.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+
+        <h3 class="title">Temperature Converter</h3>
+
+        <input type="text" placeholder="Input" id="input" class="input-field">
+        <select id="measureFrom" class="dropdown">
+            <option value="°C">°C</option>
+            <option value="°F">°F</option>
+            <option value="K">K</option>
+        </select>
+
+        <input disabled placeholder="Output" id="output" class="input-field">
+        <select id="measureTo" class="dropdown">
+            <option value="°F">°F</option>
+            <option value="°C">°C</option>
+            <option value="K">K</option>
+        </select>
+
+        <button id="button" class="btn">Convert</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
