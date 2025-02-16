@@ -1,10 +1,3 @@
-// F to C: ((32°F − 32) × 5/9 = 0°C
-// C to K: °C + 273.15
-// K to F: (K - 273.15) * 1.8 + 32
-
-// 1. add round num 
-// 2. add button copy
-
 const measureFrom = document.getElementById("measureFrom");
 const measureTo = document.getElementById("measureTo");
 const input = document.getElementById("input");
@@ -57,7 +50,7 @@ button.onclick = function(){
 }
 
 function FtoK(f){
-    return (f - 32) * 5/9 + 273.15
+    return (f - 32) * 5/9 + 273.15;
 }
 
 function FtoC(f){
@@ -65,7 +58,7 @@ function FtoC(f){
 }
 
 function CtoF(c){
-    return (c * 9/5) + 32
+    return (c * 9/5) + 32;
 }
 
 function CtoK(c){
@@ -77,7 +70,7 @@ function KtoF(k){
 }
 
 function KtoC(k){
-    return k - 273.15 
+    return k - 273.15;
 }
 
 function copyOutput(){
